@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortner app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="heading">
+        <h1> URL Shortner App </h1>
+    </header>
+    <div class="inputContainer">
+        <form action="/url" method="post">
+            <input type="text" name="url" placeholder="www.example.com" required>
+            <button type="submit">Genrate</button>
+        </form>
+    </div>
+    <% if (locals.id) { %>
+      <p><a href="http://localhost:1181/url/<%= id %>">http://localhost:1181/url/<%= id %></a></p>
+    <% } %>
+    <!-- table -->
+    <div class="table">
+        <% if (locals.urls) { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Short Url</th>
+                        <th>Redirect</th>
+                        <th>Click</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% urls.forEach((url, index) => { %>
+                        <tr>
+                            <td><%= index + 1 %></td>
+                            <td><a href="http://localhost:1181/url/<%= url.shortId %>">
+                                http://localhost:1181/url/<%= url.shortId %>
+                            </a></td>
+                            <td><a href="<%= url.redirectURL %>"><%= url.redirectURL %></a></td>
+                            <td><%= url.visiteHistory.length %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        <% } %>
+    </div>
+    
+</body>
+</html>

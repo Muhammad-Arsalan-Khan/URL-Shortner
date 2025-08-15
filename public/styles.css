@@ -1,0 +1,387 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.heading{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.inputContainer input{
+    padding: 10px;
+    width: 350px;
+    font-size: 18px;
+    outline: none;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.inputContainer button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.table{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.table table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 200px;
+}
+.table table>thead>tr>th{
+    background-color: black;
+    color: white;
+    border: 0.5px solid white;
+}
+.table table>tbody>tr>td{
+    background-color: lightgray;
+}
+a{
+    color: black;
+    text-decoration: none;
+} */
+ /* General Styling */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header Styling */
+/* .heading {
+    text-align: center;
+    margin-bottom: 30px;
+} */
+
+/* Input Container */
+/* .inputContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inputContainer form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.inputContainer input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputContainer button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputContainer button:hover {
+    background-color: #45a049;
+}
+
+
+.table {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+}
+
+.table th {
+    background-color: #f4f7fa;
+    color: #333;
+    font-weight: 600;
+}
+
+.table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.table a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Link Style 
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* For small screens
+@media (max-width: 768px) {
+    .inputContainer form {
+        flex-direction: column;
+    }
+
+    .inputContainer input,
+    .inputContainer button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .table {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .table table {
+        font-size: 14px;
+    }
+} */
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin: 0;
+}
+
+/* Input Container */
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.inputContainer form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.inputContainer input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputContainer button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputContainer button:hover {
+    background-color: #45a049;
+}
+
+/* URL Display Section */
+.table {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f7fa;
+    color: #333;
+    font-weight: 600;
+}
+
+.table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.table a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Link Style */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    /* Make the input and button stack vertically on smaller screens */
+    .inputContainer form {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .inputContainer input,
+    .inputContainer button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Adjust table styling for small screens */
+    .table {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .table table {
+        font-size: 14px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* For very small screens (Mobile view) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .heading h1 {
+        font-size: 1.8em;
+    }
+
+    .inputContainer input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .inputContainer button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .table {
+        padding: 10px;
+    }
+
+    .table th, .table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
